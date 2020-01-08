@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/print">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/background" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="110dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date :"
+                android:textColor="#000"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="28-12-2019"
+                android:textColor="#000"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="120dp"
+            android:textStyle="bold"
+            android:text="Client Name" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_marginBottom="-27dp"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:text="Site 1" />
+        <TextView
+            android:id="@+id/scape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_marginBottom="-27dp"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:text="Soft Scape" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/scape"
+            android:layout_marginBottom="-15dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/l1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:text="Number of pest infected plants : " />
+
+            <TextView
+                android:id="@+id/pest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingRight="25dp"
+                android:text="NONE"
+                android:textColor="#000"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l2"
+            android:layout_alignBottom="@+id/l1"
+            android:layout_marginBottom="-15dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:text="Number of disease infected plants :" />
+
+            <TextView
+                android:id="@+id/disease"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingRight="25dp"
+                android:text="NONE"
+                android:textColor="#000"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/l2"
+            android:id="@+id/l3"
+            android:layout_marginBottom="-15dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:text="Number of plants with nutrient deficiency :" />
+
+            <TextView
+                android:id="@+id/nutrient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingRight="25dp"
+                android:text="NONE"
+                android:textColor="#000"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l4"
+            android:layout_alignBottom="@+id/l3"
+            android:layout_marginBottom="-15dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:text="Number of plants with water insufficiency :" />
+
+            <TextView
+                android:id="@+id/water"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingRight="25dp"
+                android:text="NONE"
+                android:textColor="#000"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l5"
+            android:layout_alignBottom="@+id/l4"
+            android:layout_marginBottom="-15dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:text="Number of plants with temporary wilting:" />
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingRight="25dp"
+                android:text="NONE"
+                android:textColor="#000"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l6"
+            android:layout_alignBottom="@+id/l5"
+            android:layout_marginBottom="-15dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:text="Number of Plants With Permanent Wilting:" />
+
+            <TextView
+                android:id="@+id/perm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingRight="25dp"
+                android:text="NONE"
+                android:textColor="#000"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/l6"
+            android:layout_marginBottom="-30dp"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:text="Hard Scape" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l7"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_marginBottom="-15dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:text="Damages to the fabricated frame :" />
+
+            <TextView
+                android:id="@+id/fab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingRight="25dp"
+                android:text="NONE"
+                android:textColor="#000"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l8"
+            android:layout_alignBottom="@+id/l7"
+            android:layout_marginBottom="-15dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:text="Condition of Medium :" />
+
+            <TextView
+                android:id="@+id/medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingRight="25dp"
+                android:text="NONE"
+                android:textColor="#000"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l9"
+            android:layout_alignBottom="@+id/l8"
+            android:layout_marginBottom="-15dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:text="Water Inlet :" />
+
+            <TextView
+                android:id="@+id/water_inlet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingRight="25dp"
+                android:text="NONE"
+                android:textColor="#000"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l10"
+            android:layout_alignBottom="@+id/l9"
+            android:layout_marginBottom="-15dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:text="Drippers Condition :" />
+
+            <TextView
+                android:id="@+id/drippers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingRight="25dp"
+                android:text="NONE"
+                android:textColor="#000"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l11"
+            android:layout_alignBottom="@+id/l10"
+            android:layout_marginBottom="-15dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:text="Damages in Drip Pipes :" />
+
+            <TextView
+                android:id="@+id/drip_pipes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingRight="25dp"
+                android:text="NONE"
+                android:textColor="#000"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l12"
+        android:layout_alignBottom="@+id/l11"
+        android:layout_marginBottom="-15dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:text="Drainage Condition :" />
+
+        <TextView
+            android:id="@+id/drinage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:paddingRight="25dp"
+            android:text="NONE"
+            android:textColor="#000"
+            android:textSize="12sp" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l13"
+            android:layout_alignBottom="@+id/l12"
+            android:layout_marginBottom="-15dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:text="Pots Damaged :" />
+
+            <TextView
+                android:id="@+id/pots_damaged"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingRight="25dp"
+                android:text="NONE"
+                android:textColor="#000"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/generate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate PDF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

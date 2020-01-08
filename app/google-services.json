@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "742080242822",
+    "firebase_url": "https://gardenscanner-32cb6.firebaseio.com",
+    "project_id": "gardenscanner-32cb6",
+    "storage_bucket": "gardenscanner-32cb6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742080242822:android:e29dc3780db6085d75dd07",
+        "android_client_info": {
+          "package_name": "com.example.android.gardenscanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742080242822-gl2pfomu1psufp51kp2tv4a42bcarpov.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.gardenscanner",
+            "certificate_hash": "0f051b68d4ce8a5aca2c61438549d6e2e4465088"
+          }
+        },
+        {
+          "client_id": "742080242822-5egiruq9slqff79fh68g7qnuipoc06n2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkIYACNZ7LI6TDbAOOTjL8b5fl5gXPyVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742080242822-5egiruq9slqff79fh68g7qnuipoc06n2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
